@@ -1,0 +1,32 @@
+{
+    "name": "razonyang/psr-rate-limiter",
+    "description": "PSR-15 Rate Limiter Middleware",
+    "type": "library",
+    "keywords": ["middleware", "psr-15", "rate limiter"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Razon Yang",
+            "email": "razonyang@gmail.com"
+        }
+    ],
+    "require": {
+        "psr/http-factory": "^1.0",
+        "psr/http-server-middleware": "^1.0",
+        "razonyang/token-bucket": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7",
+        "nyholm/psr7": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "RazonYang\\Psr\\RateLimiter\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RazonYang\\Psr\\RateLimiter\\Tests\\": "tests"
+        }
+    }
+}
